@@ -25,13 +25,6 @@ function ProductsList() {
 
     return (
         <section>
-            <nav>
-                <ul className="breadcrumb">
-                    <li>Hola</li>
-                    <li>Samsung</li>
-                    <li>Celulares</li>
-                </ul>
-            </nav>
             <article className="grid gap-4">
                 {results.map(item => (
                     <Link key={item.id} to={`/items/${item.id}`} className="link-text">
